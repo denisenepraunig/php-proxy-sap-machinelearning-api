@@ -8,6 +8,6 @@ Name=php
 WebIDEEnabled=true
 CloudConnectorVersion=2
 ProxyType=Internet
-URL=http\://javascriptspielereien.de/php/
+URL=http://www.example.com/phpscripts/
 User=user
 WebIDESystem=php
