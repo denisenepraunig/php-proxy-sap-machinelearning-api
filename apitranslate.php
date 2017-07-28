@@ -13,8 +13,6 @@
             $input = json_decode(file_get_contents('php://input'), true);
             $text_to_translate = $input['text'];
             
-            //$text_to_translate = 'Der zu übersetzende Text';
-            
             $postdata = array(
                 'sourceLanguage' => 'de',
                 'targetLanguages' => array('en'),
