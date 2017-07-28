@@ -10,7 +10,7 @@ So I was looking for another solution - and here it is! :-)
 
 PHP you ask? There is a [Java Proxy Servlet](https://github.com/SAP/cloud-connectivityproxy), but I still don't speak Java, no Maven know how, no Eclipse on my machine... I speak JavaScript and PHP and have a webspace - so should be sufficient. May in the future I write a node.js app and deploy it to our Cloud Foundry trial.
 
-## Info
+## Info 1
 The **php** is the destination file for the SAP Cloud Platform Connectivity.
 
 The **index.html** and **neo-app.json** need to be inside your SAP Web IDE and and can be deployed to the SAP Cloud Platform. 
@@ -18,3 +18,6 @@ The **index.html** and **neo-app.json** need to be inside your SAP Web IDE and a
 The **.htaccess** and **apitranslate.php** need to be deployed to your own webspace. Provide your own API key inside this file.
 
 The **apitranslate.php** file is secured via basic auth, you maintain user and password inside the destination in the SAP Cloud Platform. This file finally sends the request to the SAP Leonardo Machine Learning API including the API Key inside the header.
+
+## Info 2
+This was completely Stack Overflow driven development. May hacky, but it works.
