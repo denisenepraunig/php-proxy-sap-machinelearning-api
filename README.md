@@ -10,6 +10,11 @@ So I was looking for another solution - and here it is! :-)
 
 PHP you ask? There is a [Java Proxy Servlet](https://github.com/SAP/cloud-connectivityproxy), but I still don't speak Java, no Maven know how, no Eclipse on my machine... I speak JavaScript and PHP and have a webspace - so should be sufficient. May in the future I write a node.js app and deploy it to our Cloud Foundry trial.
 
+## Architecture
+Here you see a high level diagram how the front end calls the the SAP Cloud Platform destination service who stores the BasicAuth data for the php script and calls the php script, which calls the SAP Machine Learning API with the APIKey header field.
+
+![Architecture](php-proxy-sap-cloud.jpg)
+
 ## Info 1
 The **php** is the destination file for the SAP Cloud Platform Connectivity.
 
