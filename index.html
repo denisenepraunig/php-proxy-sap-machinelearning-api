@@ -1,1 +1,34 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
+	</script>
+  </head>
+  <body>
+    
+    
+    <script>
+    	
+    	var toTranslate = {text: 'Der Bestellvorgang wurde abgebrochen'};
+    	
+		$.ajax({
+			type: "POST",
+			url: '/apihubtranslate',
+			data: JSON.stringify(toTranslate),
+	    	contentType: "application/json; charset=utf-8",
+	    	dataType: "json",
+			success: function(data){
+	    		console.log(data);
+			}
+		});
+    	
+    </script>
+    
+  </body>
+</html>
